@@ -1,5 +1,7 @@
 class Mycar
 
+	attr_accessor :color
+
 	def initialize(year, color, model)
 		@year = year
 		@color = color
@@ -26,22 +28,25 @@ class Mycar
 		puts "Now speed: #{@currentSpeed}"
 	end
 
+	def year
+		@year
+	end
+
+
 end
 
 
 
 myc = Mycar.new('1990', 'blue', 'BMW')
 
-myc.currentSpeed
-myc.speedup(50)
-myc.currentSpeed
-myc.brake(20)
-myc.currentSpeed
-myc.shutdown
-myc.currentSpeed
 
+puts myc.color
 
+myc.color = "white"
 
+puts myc.color
+
+puts myc.year 
 
 
 
