@@ -32,6 +32,10 @@ class Mycar
 		@year
 	end
 
+	def spray_paint(color)
+		@color = color
+	end
+
 end
 
 
@@ -41,11 +45,11 @@ myc = Mycar.new('1990', 'blue', 'BMW')
 
 puts myc.color
 
-myc.color = "white"
+myc.spray_paint("white")
 
 puts myc.color
 
-puts myc.year
+
 
 
 
