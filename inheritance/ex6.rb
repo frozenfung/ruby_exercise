@@ -14,6 +14,15 @@ class Vehicle
 		puts "there are total #{@@num_of_v} vehicle created"
 	end
 
+	def age
+		puts "Your car is #{real_age} years old."
+	end	
+
+	private
+
+	def real_age
+		Time.now.year - self.year
+	end
 end
 
 class MyTruck < Vehicle
